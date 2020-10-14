@@ -1,9 +1,9 @@
 // requires each route file
 const express = require("express");
-// const apiWorkoutRoutes = require("./apiWorkoutRoutes")
+const apiWorkoutRoutes = require("./apiWorkoutRoutes")
 
-const Router = express.Router();
+const router = express.Router();
 
-// Router.use("/workouts", apiWorkoutRoutes);
+// router.use("/Workout", apiWorkoutRoutes);
 
-module.exports = Router;
+module.exports = router;
