@@ -1,7 +1,7 @@
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
-const routes = require("./routes/index");
+const apiRoutes = require("./routes/apiWorkoutRoutes");
 const htmlRoutes = require("./routes/htmlRoutes");
 require('dotenv').config()
 
@@ -12,7 +12,6 @@ const app = express();
 app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 app.use(express.static("public"));
 
 // connect MongoDB with mongoose
@@ -24,7 +23,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Fitness-Tracker
 });
 
 // Routes
-app.use("/api", routes);
+app.use("/api", apiRoutes);
 app.use("/", htmlRoutes);
 // require("./routes/htmlRoutes")(app);
 // require("./routes/apiWorkoutRoutes")(app);
