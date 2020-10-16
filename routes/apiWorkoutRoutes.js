@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const db = require("../models");
 
-// module.exports = function(app) {
 
 router.get("/workouts", (req, res) => {
     db.Workout.find({})
@@ -56,7 +55,7 @@ router.put("/workouts/:id", ({ body, params }, res) => {
             res.json(err);
         });
 });
-// };
+
 
 
 module.exports = router;
