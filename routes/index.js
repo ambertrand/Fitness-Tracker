@@ -4,6 +4,6 @@ const apiWorkoutRoutes = require("./apiWorkoutRoutes")
 
 const router = express.Router();
 
-router.use("/Workout", apiWorkoutRoutes);
+router.use("/apiWorkoutRoutes", apiWorkoutRoutes);
 
 module.exports = router;
