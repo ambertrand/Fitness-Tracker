@@ -10,7 +10,7 @@
  * [Contact](#contact)
 
 ## Description
- A fun application to track burgers as they are logged and eaten using MySQL, Node.js, Express.js & Handlebars.
+ A fun application to log workouts and exercises using Node.js, Express, MongoDB & Mongoose.
 
 ### Project Link:
 [Fitness-Tracker]()
