@@ -13,7 +13,7 @@
  A fun application to log workouts and exercises using Node.js, Express, MongoDB & Mongoose.
 
 ### Project Link:
-[Fitness-Tracker]()
+[Fitness-Tracker](https://quiet-thicket-11315.herokuapp.com/)
 
 ## Technologies Used
     * Basic: HTML, CSS, Javascript
